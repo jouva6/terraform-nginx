@@ -68,3 +68,7 @@ metadata {
  }
  }
 }
+variable "page_content" {
+type = string
+default = "<h1>Version 2 - Nginx modifié via variable Terraform</h1>"
+}
