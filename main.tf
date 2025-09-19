@@ -11,7 +11,7 @@ config_path = "~/.kube/config"
 }
 variable "page_content" {
 type = string
-default = "<h1>Version 1 - Nginx via Terraform</h1>"
+default = "<h1>Version 2 - Nginx modifié via variable Terraform</h1>"
 }
 resource "kubernetes_config_map" "nginx_index" {
 metadata {
@@ -68,7 +68,4 @@ metadata {
  }
  }
 }
-variable "page_content" {
-type = string
-default = "<h1>Version 2 - Nginx modifié via variable Terraform</h1>"
-}
+
